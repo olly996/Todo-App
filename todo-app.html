@@ -222,8 +222,9 @@
 		},
 		DTapped: function(e){
 			var target = e.model;
-            var index = this.todos.indexOf(target.get('item'));
-            this.splice('todos', index, 1);
+			
+            var index = this.dos.indexOf(target.get('item'));
+            this.splice('dos', index, 1);
 		},
 		postTask: function (e) {
 
@@ -273,20 +274,6 @@
 
 		}
 	});
-	var names1 = ["red", "orange", "yellow", "green", "blue", "indigo", "purple"];
-	var names2 = ["hat", "shoe", "car", "light", "cat", "gnome"];
-	function randItem(arr) {
-		return arr[Math.floor(Math.random() * arr.length)];
-	}
-	function randID() {
-		return Math.floor(Math.random() * 10000);
-	}
-	function findWithAttr(array, attr, value) {
-		for (var i = 0; i < array.length; i += 1) {
-			if (array[i][attr] === value) {
-				return i;
-			}
-		} return -1;
-	}
+	
 
 </script>
